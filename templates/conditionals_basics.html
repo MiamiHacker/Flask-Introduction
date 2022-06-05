@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Conditional Statements</title>
+  </head>
+  <body>
+    <header>
+      <!-- <div class="title"><img class="logo" src="/static/assets/logo.svg" /> Microblog</div> -->
+      <div class="menu">
+        <a class="menu-item" href="http://127.0.0.1:5000/">home</a>
+        <a class="menu-item" href="http://127.0.0.1:5000/expressions/">expressions</a>
+        <a class="menu-item" href="http://127.0.0.1:5000/data_structures/">data structures</a>
+        <a class="menu-item" href="http://127.0.0.1:5000/conditionals-basics/">conditionals</a>
+        <a class="menu-item" href="http://127.0.0.1:5000/for-loop/">looping</a>
+        <a class="menu-item" href="http://127.0.0.1:5000/for-loop/conditionals/">looping conditionals</a>
+      </div>
+    </header>
+  <div class="content">
+    <h1>Conditionals in Jinja2</h1>
+    <h2>Basic comparisons</h2>
+    {% if company %}
+    <h3>Available Apple products</h3>
+    <ul>
+      <li>iPhone</li>
+      <li>iPad</li>
+      <li>iMac</li>
+    </ul>
+    {% else %}
+    <p>No {{ company }} products available.</p>
+    {% endif %}
+  </div>
+  </body>
+</html>

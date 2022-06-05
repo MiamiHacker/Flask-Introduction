@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <title>Jinja2 Introduction</title>
+    </head>
+    <body>
+    
+        <header>
+            <!-- <div class="title"><img class="logo" src="/static/assets/logo.svg" /> Microblog</div> -->
+            <div class="menu">
+                <a class="menu-item" href="http://127.0.0.1:5000/">home</a>
+                <a class="menu-item" href="http://127.0.0.1:5000/expressions/">expressions</a>
+                <a class="menu-item" href="http://127.0.0.1:5000/data_structures/">data structures</a>
+                <a class="menu-item" href="http://127.0.0.1:5000/conditionals-basics/">conditionals</a>
+                <a class="menu-item" href="http://127.0.0.1:5000/for-loop/">looping</a>
+                <a class="menu-item" href="http://127.0.0.1:5000/for-loop/conditionals/">looping conditionals</a>
+                </div>
+        </header>
+        
+        <div class="content">
+            <h1>Hello, {{ name }}</h1>
+            <p>This is a introduction to the {{ template_name }} templating language.</p>
+            <p class="small-margin">Python code</p>
+            <img src="/static/pictures/flask.png" alt="python code">
+            <p class="small-margin">Python with Jinja2</p>
+            <img src="/static/pictures/jinja.png" alt="jinja code">
+        </div>
+    </body>
+</html>
